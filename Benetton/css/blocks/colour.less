@@ -1,0 +1,75 @@
+// main: ../style.less
+
+
+.colour_intro {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+    margin-top: 2.4rem;
+    background: url(..//img/colour.webp) center no-repeat;
+    background-size: cover;
+
+    @media @1025 {
+        height: 40rem;
+    }
+}
+
+.colour_circle {
+    padding: 9rem 0;
+    margin: 0 auto;
+    position: relative;
+
+    //& svg {
+    //    overflow: hidden;
+    //    box-sizing: border-box;
+    //}
+}
+
+.wheel {
+    width: 90%;
+}
+
+.wheel-slice {
+    cursor: pointer;
+    opacity: 0.7;
+
+    @media @769 {
+        opacity: 1;
+    }
+}
+
+.wheel-slice:hover  {
+    opacity: 1;
+
+    stroke: #fabbbb;
+    stroke-width: 1px;
+    transition: stroke .5s linear, stroke-width .9s linear, opacity .2s linear;
+}
+
+.colour_circle_text {
+    width: 19rem;
+    position: absolute;
+    color: @white;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    & a {
+        color: inherit;
+    }
+
+    @media @769 {
+        font-size: clamp(3rem, 8.5vw, 4.8rem);
+    }
+}
+
+
+
+
+

@@ -1,0 +1,228 @@
+// main: ../style.less
+
+
+.greeting_intro {
+    display: flex;
+    padding: 3.2rem 0;
+    justify-content: center;
+    align-items: center;
+
+    @media @1201 {
+        padding: 1.5rem 0;
+    }
+
+    @media @1025 {
+        padding: 1rem 0;
+    }
+
+    @media @769 {
+        margin-left: -3rem;
+        padding: 0;
+    }
+
+    @media @481 {
+        margin-left: -4rem;
+    }
+
+    @media @415 {
+        margin-left: -3rem;
+    }
+}
+
+.welcome {
+    display: block;
+    margin-right: 4rem;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @media @1201 {
+        margin-right: 0;
+        font-size: 5.6rem;
+    }
+
+    @media @1025 {
+        margin-right: -3rem;
+        font-size: 4rem;
+    }
+
+    @media @769 {
+        font-size: clamp(2rem, 6vw, 4rem);
+    }
+
+    @media @481 {
+        margin-right: -5rem;
+    }
+
+    @media @415 {
+        margin-right: -6rem;
+    }
+}
+
+.welcome_logo {
+    display: flex;
+    height: 9.6rem;
+    align-items: center;
+    vertical-align: middle;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+
+    @media @1201 {
+        height: auto;
+        transform: scale(.8);
+    }
+
+    @media @1025 {
+        width: 42rem;
+        transform: scale(.7);
+    }
+
+    @media @769 {
+        width: 31rem;
+        margin-left: -3rem;
+        transform: scale(.5);
+    }
+
+    @media @481 {
+        height: 5rem;
+        width: 20rem;
+        transform: scale(.3);
+        margin-left: 0;
+    }
+}
+
+.logo-animation path {
+    fill: transparent;
+    stroke-width: .2rem;
+    stroke: @white;
+}
+
+
+[data-aos="logo-animation"].aos-animate path:nth-child(1) {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: animate-red 2s linear forwards;
+
+    @keyframes animate-red {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @red;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(2) {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    animation: animate-pink 2s linear forwards;
+
+    @keyframes animate-pink {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @pink;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(3) {
+    stroke-dasharray: 430;
+    stroke-dashoffset: 430;
+    animation: animate-orange 2s linear forwards;
+
+    @keyframes animate-orange {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @orange;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(4) {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    animation: animate-purple 2s linear forwards;
+
+    @keyframes animate-purple {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @purple;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(5) {
+    stroke-dasharray: 255;
+    stroke-dashoffset: 255;
+    animation: animate-brown 2s linear forwards;
+
+    @keyframes animate-brown {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @brown;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(6) {
+    stroke-dasharray: 255;
+    stroke-dashoffset: 255;
+    animation: animate-yellow 2s linear forwards;
+
+    @keyframes animate-yellow {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @yellow;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(7) {
+    stroke-dasharray: 255;
+    stroke-dashoffset: 255;
+    animation: animate-blue 2s linear forwards;
+
+    @keyframes animate-blue {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @blue;
+        }
+    }
+}
+
+[data-aos="logo-animation"].aos-animate path:nth-child(8) {
+    stroke-dasharray: 430;
+    stroke-dashoffset: 430;
+    animation: animate-green 2s linear forwards;
+
+    @keyframes animate-green {
+        from {
+            fill: transparent;
+        }
+        to {
+            stroke-dashoffset: 0;
+            fill: @green;
+        }
+    }
+}
