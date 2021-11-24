@@ -39,10 +39,6 @@ $(function () {
         e.stopPropagation();
     });
 
-    footerdrop.click(function(e){
-        e.stopPropagation();
-    });
-
     $(document).click(function(){
         footerdrop.removeClass("show");
         footertitle.removeClass("active");
@@ -52,10 +48,6 @@ $(function () {
     footertitle2.click(function(e){
         footerdrop2.toggleClass("show");
         footertitle2.toggleClass("active");
-        e.stopPropagation();
-    });
-
-    footerdrop2.click(function(e){
         e.stopPropagation();
     });
 
@@ -71,10 +63,6 @@ $(function () {
         e.stopPropagation();
     });
 
-    footerdrop3.click(function(e){
-        e.stopPropagation();
-    });
-
     $(document).click(function(){
         footerdrop3.removeClass("show");
         footertitle3.removeClass("active");
@@ -84,10 +72,6 @@ $(function () {
     footertitle4.click(function(e){
         footerdrop4.toggleClass("show");
         footertitle4.toggleClass("active");
-        e.stopPropagation();
-    });
-
-    footerdrop4.click(function(e){
         e.stopPropagation();
     });
 
