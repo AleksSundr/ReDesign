@@ -34,7 +34,6 @@ $(function () {
 
 
     footertitle.click(function(e){
-        $(this).closest('.footer_title').children('.footer_dropdown');
         footerdrop.toggleClass("show");
         footertitle.toggleClass("active");
         e.stopPropagation();
