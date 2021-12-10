@@ -23,62 +23,31 @@ $(function () {
 
 
     /* Footer dropdown */
-    const footertitle = $("#footertitle");
-    const footerdrop = $("#footerdrop");
-    const footertitle2 = $("#footertitle2");
-    const footerdrop2 = $("#footerdrop2");
-    const footertitle3 = $("#footertitle3");
-    const footerdrop3 = $("#footerdrop3");
-    const footertitle4 = $("#footertitle4");
-    const footerdrop4 = $("#footerdrop4");
+    const footerItemPrent = $(".footer_top_item"),
+    footerItemTitle = $(".footer_title"),
+    footerItemDropdown = $(".footer_dropdown");
 
-
-    footertitle.click(function(e){
-        footerdrop.toggleClass("show");
-        footertitle.toggleClass("active");
+    footerItemPrent.click(function(e){
+        var _this = $(this),
+        footer_title = _this.find('.footer_title');
+        if (footer_title.hasClass('active')) {
+            hideMenus();
+        } else {
+            hideMenus();
+            _this.find('.footer_title').addClass("active");
+            _this.find('.footer_dropdown').addClass("show");
+        }
         e.stopPropagation();
     });
 
     $(document).click(function(){
-        footerdrop.removeClass("show");
-        footertitle.removeClass("active");
+        hideMenus();
     });
 
-
-    footertitle2.click(function(e){
-        footerdrop2.toggleClass("show");
-        footertitle2.toggleClass("active");
-        e.stopPropagation();
-    });
-
-    $(document).click(function(){
-        footerdrop2.removeClass("show");
-        footertitle2.removeClass("active");
-    });
-
-
-    footertitle3.click(function(e){
-        footerdrop3.toggleClass("show");
-        footertitle3.toggleClass("active");
-        e.stopPropagation();
-    });
-
-    $(document).click(function(){
-        footerdrop3.removeClass("show");
-        footertitle3.removeClass("active");
-    });
-
-
-    footertitle4.click(function(e){
-        footerdrop4.toggleClass("show");
-        footertitle4.toggleClass("active");
-        e.stopPropagation();
-    });
-
-    $(document).click(function(){
-        footerdrop4.removeClass("show");
-        footertitle4.removeClass("active");
-    });
+    function hideMenus() {
+        footerItemDropdown.removeClass("show");
+        footerItemTitle.removeClass("active");
+    }
 
 
     /* Slider Intro
