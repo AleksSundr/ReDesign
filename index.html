@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;700&family=Salsa&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#0BB23A">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Benetton</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <a href="#">
+                        <svg class="textlogo" aria-hidden="true" width="139" height="32" viewBox="0 0 139 32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M69.4561 6.75068C69.4561 2.89315 72.3501 0 76.4719 0C78.3321 0 79.7847 0.489004 80.1222 0.602629L80.1552 0.613698V2.36712C79.9798 2.27945 78.3136 1.57808 76.5596 1.57808C73.5779 1.57808 71.3855 3.68219 71.3855 6.48767C71.3855 9.38082 73.4902 11.3973 76.5596 11.3973C78.5766 11.3973 79.9798 10.8712 80.0675 10.7836V12.6247C79.9798 12.7123 78.5766 13.1507 76.3842 13.1507C71.5609 13.1507 69.4561 9.46849 69.4561 6.75068ZM11.6637 0.175415H9.90978V7.71514C9.90978 10.6083 8.24353 11.485 6.2265 11.485C3.77098 11.485 2.54322 10.1699 2.54322 7.71514V0.175415H0.613881V8.06582C0.613881 11.5727 3.0694 13.1508 6.1388 13.1508C9.64669 13.1508 11.6637 11.222 11.6637 8.06582V0.175415ZM25.1691 0.175415H23.4151V10.0823L15.6978 0.175415H14.2069V13.0631H15.8732V3.15623L23.5905 13.0631H25.1691V0.175415ZM28.1508 0.175415H29.9924V13.0631H28.1508V0.175415ZM41.0423 0.175415H31.7464V1.7535H35.5174V13.0631H37.359V1.7535H41.0423V0.175415ZM42.7085 0.175415H50.0751V1.7535H44.5502V5.61103H49.812V7.18911H44.5502V11.3973H50.1628V13.0631H42.7085V0.175415ZM56.8277 0.175415H52.5306V13.0631H56.8277C61.3003 13.0631 63.6681 9.90692 63.6681 6.66308C63.6681 3.59459 61.5634 0.175415 56.8277 0.175415ZM54.3722 11.3973V1.7535H56.5647C60.0725 1.7535 61.7388 4.03295 61.7388 6.57541C61.7388 9.29322 59.8971 11.3973 56.5647 11.3973H54.3722ZM97.1685 0.175415H99.0101V11.3973H104.36V13.0631H97.1685V0.175415ZM123.916 0.175415H119.97V13.0631H121.811V7.45212H124.091L127.599 13.0631H129.792C128.915 11.8357 125.933 7.01377 125.933 7.01377C126.196 6.9261 128.126 6.22473 128.126 3.76993C128.126 1.49048 126.547 0.175415 123.916 0.175415ZM121.811 5.87404V1.7535H123.653C125.407 1.7535 126.196 2.63021 126.196 3.8576C126.196 4.90966 125.582 5.96171 123.653 5.96171H121.811V5.87404ZM87.9602 0C84.1892 0 81.1198 2.98082 81.1198 6.57534C81.1198 10.2575 84.1015 13.1507 87.9602 13.1507C91.7312 13.1507 94.8006 10.1699 94.8006 6.57534C94.8006 2.98082 91.7312 0 87.9602 0ZM87.9602 11.4849C85.2416 11.4849 83.0492 9.29315 83.0492 6.57534C83.0492 3.85753 85.2416 1.66575 87.9602 1.66575C90.6788 1.66575 92.8713 3.85753 92.8713 6.57534C92.8713 9.29315 90.7665 11.4849 87.9602 11.4849ZM104.272 6.57534C104.272 2.98082 107.341 0 111.112 0C114.883 0 117.865 2.98082 117.953 6.57534C117.953 10.1699 114.883 13.1507 111.112 13.1507C107.254 13.1507 104.272 10.2575 104.272 6.57534ZM106.201 6.57534C106.201 9.29315 108.394 11.4849 111.112 11.4849C113.831 11.4849 116.023 9.29315 116.023 6.57534C116.023 3.85753 113.831 1.66575 111.112 1.66575C108.394 1.66575 106.201 3.85753 106.201 6.57534ZM134.966 0C132.423 0 130.844 1.49041 130.844 3.41918C130.844 5.1726 131.809 6.13698 133.212 6.75068C133.332 6.81058 133.534 6.90117 133.765 7.00498L133.765 7.00504C134.21 7.20511 134.765 7.45425 135.054 7.62739L135.129 7.66494C135.845 8.02139 137.071 8.63141 137.071 9.7315C137.071 10.6082 136.194 11.4849 134.44 11.4849C132.686 11.4849 131.809 10.7836 131.633 10.6082L130.756 12.1863C130.776 12.1959 130.806 12.215 130.847 12.2415L130.847 12.2416C131.181 12.4561 132.264 13.1507 134.527 13.1507C136.808 13.1507 139 12.0986 139 9.55616C139 7.36438 136.983 6.4 135.843 5.87397C135.537 5.75176 135.146 5.54437 134.819 5.37054L134.819 5.3704C134.676 5.29488 134.546 5.2257 134.44 5.1726C133.563 4.73424 132.861 4.20822 132.861 3.24383C132.861 2.36712 133.65 1.57808 135.141 1.57808C136.632 1.57808 137.509 2.10411 137.685 2.27945L138.211 0.701369C138.17 0.701369 138.078 0.66373 137.936 0.605891C137.465 0.414053 136.448 0 134.966 0ZM15.7855 18.937H22.6259V20.6027H17.6271V24.2849H22.6259V25.863H17.6271V31.8247H15.7855V18.937ZM6.84038 18.8493C3.0694 18.8493 0 21.8301 0 25.4247C0 29.1069 2.9817 32 6.84038 32C10.6114 32 13.6808 29.0192 13.6808 25.4247C13.6808 21.7425 10.6991 18.8493 6.84038 18.8493ZM6.84038 30.3343C4.12177 30.3343 1.92934 28.1425 1.92934 25.4247C1.92934 22.7069 4.12177 20.5151 6.84038 20.5151C9.55899 20.5151 11.7514 22.7069 11.7514 25.4247C11.7514 28.1425 9.64669 30.3343 6.84038 30.3343ZM58.2309 18.937H59.9848V31.8247H58.4063L50.6889 21.9178V31.8247H48.935V18.937H50.5135L58.2309 28.9315V18.937ZM116.462 18.937H114.708V28.9315L106.903 18.937H105.412V31.8247H107.166V21.9178L114.796 31.8247H116.462V18.937ZM70.7716 18.937H80.0675V20.6027H76.3842V31.8247H74.5426V20.6027H70.7716V18.937ZM90.4157 18.937H81.1198V20.6027H84.8908V31.8247H86.7325V20.6027H90.4157V18.937ZM39.376 18.937H46.6549V20.6027H41.2176V24.4603H46.4795V26.0384H41.2176V30.2466H46.8303V31.8247H39.376V18.937ZM69.6316 18.937H62.3527V31.8247H69.8069V30.2466H64.1943V26.0384H69.4562V24.4603H64.1943V20.6027H69.6316V18.937ZM90.1526 25.4247C90.1526 21.8301 93.222 18.8493 96.993 18.8493C100.764 18.8493 103.746 21.7425 103.833 25.4247C103.833 29.0192 100.764 32 96.993 32C93.1343 32 90.1526 29.1069 90.1526 25.4247ZM92.082 25.4247C92.082 28.1425 94.2744 30.3343 96.993 30.3343C99.7116 30.3343 101.904 28.1425 101.904 25.4247C101.904 22.7069 99.7116 20.5151 96.993 20.5151C94.2744 20.5151 92.082 22.7069 92.082 25.4247ZM32.711 18.937H28.5016V31.8247H32.8864C36.1312 31.8247 37.2713 29.9836 37.2713 28.4055C37.2713 25.6877 35.0789 25.1616 34.9035 25.1616C34.9153 25.1557 34.9336 25.1478 34.9574 25.1375L34.9574 25.1374C35.2853 24.9952 36.6574 24.3996 36.6574 22.3562C36.6574 20.5151 35.4297 18.937 32.711 18.937ZM30.3432 24.5479V20.6027H32.448C33.9388 20.6027 34.8158 21.3041 34.8158 22.5315C34.8158 23.8466 33.8511 24.5479 32.448 24.5479H30.3432ZM30.3432 30.2466V26.126H32.7987C34.6404 26.126 35.4297 27.0027 35.4297 28.2301C35.4297 29.1945 34.9035 30.2466 32.7987 30.2466H30.3432ZM117.953 30.5977C117.953 29.8961 118.567 29.2822 119.268 29.2822C119.97 29.2822 120.584 29.8961 120.584 30.5977C120.584 31.2992 119.97 31.9131 119.268 31.9131C118.567 31.9131 117.953 31.2992 117.953 30.5977Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+
+                    <ul class="menu">
+                        <li class="menu_item  menu_item_main">
+                            <a class="nav_link" href="">women</a>
+                            <ul class="submenu  submenu-women  information-grid">
+                                <div class="submenu_img">
+                                    <img src="img/woman.webp" alt="">
+                                </div>
+                                <div>
+                                    <span class="submenu_title">Collection</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Jackets and Coats</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Puffer jackets</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Knitwear</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Sweatshirts</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">T-shirts</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <span class="submenu_title">UNDERWEAR</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Loungewear</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <span class="submenu_title">ICONIC KNITWEAR</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Cashmere</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Merino Wool</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Shetland Wool</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Tricot Cotton</a>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </li>
+                        <li class="menu_item  menu_item_main">
+                            <a class="nav_link" href="">men</a>
+                            <ul class="submenu  submenu-men  information-grid">
+                                <div class="submenu_img">
+                                    <img src="img/man.webp" alt="">
+                                </div>
+                                <div>
+                                    <span class="submenu_title">Collection</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Jackets and Coats</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Puffer jackets</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Knitwear</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Sweatshirts</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">T-shirts</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <span class="submenu_title">UNDERWEAR</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Loungewear</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <span class="submenu_title">ICONIC KNITWEAR</span>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Cashmere</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Merino Wool</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Shetland Wool</a>
+                                    </li>
+                                    <li class="submenu_item">
+                                        <a class="nav_link" href="">Tricot Cotton</a>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </li>
+                        <li class="menu_item  menu_item_main">
+                            <a class="nav_link" href="">kids</a>
+                            <ul class="submenu_kids_ages">
+                                <li class="menu_item  menu_item_kids">
+                                    <a class="nav_link" href="">JUNIOR BOY (4-14 YEARS OLD)</a>
+                                    <ul class="submenu  submenu-kids  information-grid">
+                                        <div class="submenu_img">
+                                            <img src="img/boy.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">Collection</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Jackets and Coats</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Puffer jackets</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Knitwear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Sweatshirts</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">T-shirts</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">UNDERWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Loungewear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">ICONIC KNITWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Cashmere</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Merino Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Shetland Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Tricot Cotton</a>
+                                            </li>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_item  menu_item_kids">
+                                    <a class="nav_link" href="">Kid Boy (3 months - 4 years)</a>
+                                    <ul class="submenu  submenu-kids  information-grid">
+                                        <div class="submenu_img">
+                                            <img src="img/boy2.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">Collection</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Jackets and Coats</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Puffer jackets</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Knitwear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Sweatshirts</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">T-shirts</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">UNDERWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Loungewear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">ICONIC KNITWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Cashmere</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Merino Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Shetland Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Tricot Cotton</a>
+                                            </li>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_item  menu_item_kids">
+                                    <a class="nav_link" href="">Junior Girl (4-14 years old)</a>
+                                    <ul class="submenu  submenu-kids  submenu_junior_girl  information-grid">
+                                        <div class="submenu_img">
+                                            <img src="img/girl.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">Collection</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Jackets and Coats</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Puffer jackets</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Knitwear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Sweatshirts</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">T-shirts</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">UNDERWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Loungewear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">ICONIC KNITWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Cashmere</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Merino Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Shetland Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Tricot Cotton</a>
+                                            </li>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_item  menu_item_kids">
+                                    <a class="nav_link" href="">Kid Girl (3 months - 4 years)</a>
+                                    <ul class="submenu  submenu-kids  submenu_kid_girl  information-grid">
+                                        <div class="submenu_img">
+                                            <img src="img/girl3.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">Collection</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Jackets and Coats</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Puffer jackets</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Knitwear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Sweatshirts</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">T-shirts</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">UNDERWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Loungewear</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Underwear and Pyjamas</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <span class="submenu_title">ICONIC KNITWEAR</span>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Cashmere</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Merino Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Shetland Wool</a>
+                                            </li>
+                                            <li class="submenu_item">
+                                                <a class="nav_link" href="">Tricot Cotton</a>
+                                            </li>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_item  menu_item_kids">
+                                    <a class="nav_link" href="">New Born (0-18 months)</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="menu_item  menu_item_main">
+                            <a class="nav_link" href="">inside benetton</a>
+                        </li>
+                        <li class="menu_item  menu_item_main">
+                            <a class="nav_link" href="">sustainability</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="nav_icons">
+                    <a class="nav_icons_item" href="#">
+                        <img class="nav_icons_img" src="img/search.svg" alt="">
+                    </a>
+                    <a class="nav_icons_item" href="#">
+                        <img class="nav_icons_img" src="img/account-svgrepo-com.svg" alt="">
+                    </a>
+                    <a class="nav_icons_item" href="#">
+                        <img class="nav_icons_img" src="img/favourite-svgrepo-com.svg" alt="">
+                    </a>
+                    <a class="nav_icons_item" href="#">
+                        <img class="nav_icons_img" src="img/basket-svgrepo-com.svg" alt="">
+                    </a>
+                    <a class="nav_icons_item  nav_icons_burger" href="#" id="navToggle">
+                        <img class="nav_icons_img" src="img/burger.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div id="introSlider">
+            <div class="introSlider__content">
+                <div class="introSlider__img">
+                    <img class="introSlider__img" src="img/WOMEN-lander-halloween.jpg" alt="">
+                </div>
+                <div class="introSlider__img_mob">
+                    <img class="introSlider__img_mob" src="img/WOMEN-lander-halloween_mobile.jpg" alt="">
+                </div>
+                <div class="slickPrev"></div>
+                <div class="slickNext"></div>
+                <div class="container">
+                    <div class="intro_inner">
+                        <span class="intro_subtitle">BE ROCK’N’ROLL NOT ONLY FRIDAY NIGHTS</span>
+                        <div class="intro_title">WEAR THE RIGHT MOOD</div>
+                        <button class="btn round">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="introSlider__content">
+                <div class="introSlider__img">
+                    <img class="introSlider__img" src="img/MEN-lander-shetland.jpg" alt="">
+                </div>
+                <div class="introSlider__img_mob">
+                    <img class="introSlider__img_mob" src="img/MEN-lander-shetland_mobile.jpg" alt="">
+                </div>
+                <div class="slickPrev"></div>
+                <div class="slickNext"></div>
+                <div class="container">
+                    <div class="intro_inner">
+                        <span class="intro_subtitle">BE ROCK’N’ROLL NOT ONLY FRIDAY NIGHTS</span>
+                        <div class="intro_title">WEAR THE RIGHT MOOD</div>
+                        <button class="btn round">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="introSlider__content">
+                <div class="introSlider__img">
+                    <img class="introSlider__img" src="img/KIDS-lander-harry-potter.jpg" alt="">
+                </div>
+                <div class="introSlider__img_mob">
+                    <img class="introSlider__img_mob" src="img/KIDS-lander-harry-potter_mobile.jpg" alt="">
+                </div>
+                <div class="slickPrev"></div>
+                <div class="slickNext"></div>
+                <div class="container">
+                    <div class="intro_inner">
+                        <span class="intro_subtitle">BE ROCK’N’ROLL NOT ONLY FRIDAY NIGHTS</span>
+                        <div class="intro_title">WEAR THE RIGHT MOOD</div>
+                        <button class="btn round">shop now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.IntroSlider -->
+    </div><!-- /.Intro -->
+
+    <div class="greeting">
+        <div class="container">
+            <div class="greeting_intro">
+                <span class="welcome">welcome to</span>
+                <div class="welcome_logo">
+
+                    <div class="logo-animation" data-aos="logo-animation">
+                        <svg width="529" height="77" viewBox="0 0 529 77" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.624 4.576C10.608 1.94134 19.3093 0.624004 26.728 0.624004C42.6053 0.624004 50.544 6.136 50.544 17.16C50.544 23.8853 47.3893 29.016 41.08 32.552C45.3093 33.592 48.8107 35.6027 51.584 38.584C54.3573 41.496 55.744 45.1707 55.744 49.608C55.744 57.928 52.6587 64.376 46.488 68.952C40.3173 73.4587 32.6907 75.712 23.608 75.712C14.5253 75.712 6.656 73.9093 0 70.304C2.14933 62.816 3.224 52.728 3.224 40.04C3.224 27.2827 2.35733 15.4613 0.624 4.576ZM16.328 64.48C19.3787 65.4507 22.4293 65.936 25.48 65.936C30.264 65.936 34.216 64.7573 37.336 62.4C40.456 59.9733 42.016 56.576 42.016 52.208C42.016 43.888 37.5093 39.728 28.496 39.728C24.1973 39.728 19.8293 40.6293 15.392 42.432C15.392 49.4347 15.704 56.784 16.328 64.48ZM15.288 33.28C16.2587 33.072 17.68 32.8293 19.552 32.552C21.4933 32.2747 22.984 32.032 24.024 31.824C25.064 31.616 26.3467 31.304 27.872 30.888C29.4667 30.472 30.68 29.9867 31.512 29.432C32.4133 28.808 33.3147 28.0453 34.216 27.144C35.9493 25.4107 36.816 22.88 36.816 19.552C36.816 13.104 32.968 9.88 25.272 9.88C22.776 9.88 19.7253 10.296 16.12 11.128C15.5653 25.3413 15.288 32.7253 15.288 33.28Z"
+                                fill="#EA1414" />
+                            <path
+                                d="M117.904 60.736C118.736 62.608 119.152 64.7227 119.152 67.08C119.152 69.4373 118.32 71.4827 116.656 73.216C115.061 74.88 113.085 75.712 110.728 75.712C103.379 75.712 91.8693 75.296 76.2 74.464C74.952 74.3947 73.8427 74.0133 72.872 73.32C71.9013 72.5573 71.416 71.6213 71.416 70.512C71.416 66.8373 71.6933 60.632 72.248 51.896C72.872 43.16 73.184 35.0133 73.184 27.456C73.184 19.8293 72.456 11.0933 71 1.248C76.1307 1.664 83.0293 1.872 91.696 1.872C100.363 1.872 108.648 1.248 116.552 0C117.384 1.52533 117.8 3.36267 117.8 5.512C117.8 7.592 116.968 9.464 115.304 11.128C113.709 12.7227 111.699 13.52 109.272 13.52C106.915 13.52 103.101 13.1733 97.832 12.48C92.632 11.7867 88.784 11.44 86.288 11.44C85.7333 18.4427 85.4213 25.0293 85.352 31.2C89.72 31.616 94.4 31.824 99.392 31.824C104.453 31.824 108.787 31.096 112.392 29.64C113.224 31.1653 113.64 33.0027 113.64 35.152C113.64 37.232 112.808 39.1387 111.144 40.872C109.549 42.536 107.608 43.368 105.32 43.368C103.101 43.368 99.7733 42.952 95.336 42.12C90.8987 41.2187 87.536 40.768 85.248 40.768C85.248 51.7227 85.4907 59.7653 85.976 64.896C89.304 65.1733 91.904 65.312 93.776 65.312C102.928 65.312 110.971 63.7867 117.904 60.736Z"
+                                fill="#FF0099" />
+                            <path
+                                d="M176.056 2.288C178.275 1.17867 180.597 0.624004 183.024 0.624004C185.52 0.624004 187.531 1.38667 189.056 2.91201C190.651 4.43734 191.448 6.27467 191.448 8.424C191.448 10.5733 191.136 15.3227 190.512 22.672C189.888 29.952 189.576 35.7413 189.576 40.04C189.576 53.8373 190.2 65.312 191.448 74.464C189.229 75.296 186.733 75.712 183.96 75.712C181.256 75.712 179.141 75.2613 177.616 74.36C173.179 71.7947 162.813 55.5707 146.52 25.688C146.243 28.392 146.104 34.736 146.104 44.72C146.104 54.6347 146.867 64.3413 148.392 73.84C146.243 74.672 143.92 75.088 141.424 75.088C138.928 75.088 136.883 74.2907 135.288 72.696C133.763 71.1013 133 69.1947 133 66.976C133 64.7573 133.312 60.112 133.936 53.04C134.629 45.968 134.976 40.6293 134.976 37.024C134.976 23.2267 134.317 11.7867 133 2.704C134.941 1.73334 137.784 1.248 141.528 1.248C145.272 1.248 147.907 2.73867 149.432 5.72C159.693 26.5893 169.504 44.2693 178.864 58.76C178.656 45.448 178.552 38.4107 178.552 37.648C178.552 24.6827 177.72 12.896 176.056 2.288Z"
+                                fill="#FF7A00" />
+                            <path
+                                d="M253.904 60.736C254.736 62.608 255.152 64.7227 255.152 67.08C255.152 69.4373 254.32 71.4827 252.656 73.216C251.061 74.88 249.085 75.712 246.728 75.712C239.379 75.712 227.869 75.296 212.2 74.464C210.952 74.3947 209.843 74.0133 208.872 73.32C207.901 72.5573 207.416 71.6213 207.416 70.512C207.416 66.8373 207.693 60.632 208.248 51.896C208.872 43.16 209.184 35.0133 209.184 27.456C209.184 19.8293 208.456 11.0933 207 1.248C212.131 1.664 219.029 1.872 227.696 1.872C236.363 1.872 244.648 1.248 252.552 0C253.384 1.52533 253.8 3.36267 253.8 5.512C253.8 7.592 252.968 9.464 251.304 11.128C249.709 12.7227 247.699 13.52 245.272 13.52C242.915 13.52 239.101 13.1733 233.832 12.48C228.632 11.7867 224.784 11.44 222.288 11.44C221.733 18.4427 221.421 25.0293 221.352 31.2C225.72 31.616 230.4 31.824 235.392 31.824C240.453 31.824 244.787 31.096 248.392 29.64C249.224 31.1653 249.64 33.0027 249.64 35.152C249.64 37.232 248.808 39.1387 247.144 40.872C245.549 42.536 243.608 43.368 241.32 43.368C239.101 43.368 235.773 42.952 231.336 42.12C226.899 41.2187 223.536 40.768 221.248 40.768C221.248 51.7227 221.491 59.7653 221.976 64.896C225.304 65.1733 227.904 65.312 229.776 65.312C238.928 65.312 246.971 63.7867 253.904 60.736Z"
+                                fill="#9C39CA" />
+                            <path
+                                d="M271.704 0.936L293.648 1.248C305.019 1.248 313.339 0.832002 318.608 0C319.371 1.456 319.752 3.12 319.752 4.992C319.752 6.864 318.92 8.56267 317.256 10.088C315.592 11.544 313.581 12.272 311.224 12.272L299.264 10.92C299.264 11.4053 299.091 13.5547 298.744 17.368C297.773 26.728 297.288 36.1227 297.288 45.552C297.288 54.9813 298.016 64.4107 299.472 73.84C297.184 74.672 294.792 75.088 292.296 75.088C289.8 75.088 287.651 74.3947 285.848 73.008C284.045 71.552 283.144 69.4027 283.144 66.56C283.144 63.648 283.491 58.552 284.184 51.272C284.877 43.992 285.224 36.92 285.224 30.056C285.224 23.1227 284.877 16.6747 284.184 10.712C275.795 11.128 269.243 12.3067 264.528 14.248C263.696 12.6533 263.28 10.8853 263.28 8.944C263.28 6.93334 264.077 5.096 265.672 3.43201C267.267 1.768 269.277 0.936 271.704 0.936Z"
+                                fill="#734131" />
+                            <path
+                                d="M333.704 0.936L355.648 1.248C367.019 1.248 375.339 0.832002 380.608 0C381.371 1.456 381.752 3.12 381.752 4.992C381.752 6.864 380.92 8.56267 379.256 10.088C377.592 11.544 375.581 12.272 373.224 12.272L361.264 10.92C361.264 11.4053 361.091 13.5547 360.744 17.368C359.773 26.728 359.288 36.1227 359.288 45.552C359.288 54.9813 360.016 64.4107 361.472 73.84C359.184 74.672 356.792 75.088 354.296 75.088C351.8 75.088 349.651 74.3947 347.848 73.008C346.045 71.552 345.144 69.4027 345.144 66.56C345.144 63.648 345.491 58.552 346.184 51.272C346.877 43.992 347.224 36.92 347.224 30.056C347.224 23.1227 346.877 16.6747 346.184 10.712C337.795 11.128 331.243 12.3067 326.528 14.248C325.696 12.6533 325.28 10.8853 325.28 8.944C325.28 6.93334 326.077 5.096 327.672 3.43201C329.267 1.768 331.277 0.936 333.704 0.936Z"
+                                fill="#FFF500" />
+                            <path
+                                d="M441.88 37.232C441.88 28.9813 440.181 22.3253 436.784 17.264C433.456 12.1333 428.221 9.568 421.08 9.568C416.781 9.568 412.968 10.9547 409.64 13.728C407.768 16.64 406.277 20.5573 405.168 25.48C404.128 30.4027 403.608 35.0827 403.608 39.52C403.608 47.7013 405.272 54.2533 408.6 59.176C411.928 64.0987 417.197 66.56 424.408 66.56C428.36 66.56 431.723 64.9653 434.496 61.776C439.419 56.0213 441.88 47.84 441.88 37.232ZM420.872 76.336C410.749 76.336 403.053 73.008 397.784 66.352C392.515 59.6267 389.88 50.856 389.88 40.04C389.88 29.1547 393.139 19.76 399.656 11.856C406.173 3.952 414.459 0 424.512 0C434.635 0 442.331 3.39734 447.6 10.192C452.939 16.9867 455.608 25.8267 455.608 36.712C455.608 47.5973 452.349 56.9227 445.832 64.688C439.315 72.4533 430.995 76.336 420.872 76.336Z"
+                                fill="#005DB2" />
+                            <path
+                                d="M513.056 2.288C515.275 1.17867 517.597 0.624004 520.024 0.624004C522.52 0.624004 524.531 1.38667 526.056 2.91201C527.651 4.43734 528.448 6.27467 528.448 8.424C528.448 10.5733 528.136 15.3227 527.512 22.672C526.888 29.952 526.576 35.7413 526.576 40.04C526.576 53.8373 527.2 65.312 528.448 74.464C526.229 75.296 523.733 75.712 520.96 75.712C518.256 75.712 516.141 75.2613 514.616 74.36C510.179 71.7947 499.813 55.5707 483.52 25.688C483.243 28.392 483.104 34.736 483.104 44.72C483.104 54.6347 483.867 64.3413 485.392 73.84C483.243 74.672 480.92 75.088 478.424 75.088C475.928 75.088 473.883 74.2907 472.288 72.696C470.763 71.1013 470 69.1947 470 66.976C470 64.7573 470.312 60.112 470.936 53.04C471.629 45.968 471.976 40.6293 471.976 37.024C471.976 23.2267 471.317 11.7867 470 2.704C471.941 1.73334 474.784 1.248 478.528 1.248C482.272 1.248 484.907 2.73867 486.432 5.72C496.693 26.5893 506.504 44.2693 515.864 58.76C515.656 45.448 515.552 38.4107 515.552 37.648C515.552 24.6827 514.72 12.896 513.056 2.288Z"
+                                fill="#0BB23A" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collections" id="introSlider_mobile">
+        <div class="collections_col">
+            <div class="collections_item">
+                <div class="col_scale">
+                    <img class="collections_photo" src="img/coll_women.webp" alt="">
+                </div>
+                <div class="collections_info">
+                    <a href="#">
+                        <div class="collections_title">NEW COLLECTION</div>
+                    </a>
+                    <a href="#">
+                        <div class="collections_subtitle">WOMEN</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="collections_col">
+            <div class="collections_item">
+                <div class="col_scale">
+                    <img class="collections_photo" src="img/coll_men.webp" alt="">
+                </div>
+                <div class="collections_info">
+                    <a href="#">
+                        <div class="collections_title">NEW COLLECTION</div>
+                    </a>
+                    <a href="#">
+                        <div class="collections_subtitle">MEN</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="collections_col">
+            <div class="collections_item">
+                <div class="col_scale">
+                    <img class="collections_photo" src="img/coll_kids.webp" alt="">
+                </div>
+                <div class="collections_info">
+                    <a href="#">
+                        <div class="collections_title">NEW COLLECTION</div>
+                    </a>
+                    <a href="#">
+                        <div class="collections_subtitle">kids</div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- /.collections_col -->
+    </div><!-- /.collections -->
+
+    <div class="colour">
+        <div class="colour_intro">
+            <div class="colour_circle">
+                <svg class="wheel" width="418" height="418" viewBox="-5 -5 425 430" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <path class="wheel-slice"
+                        d="M209 -1.19387e-05C227.267 -0.0212892 245.456 2.37162 263.095 7.11657L253.26 43.7974C224.265 36.0257 193.731 36.0462 164.746 43.8569L154.918 7.14964C172.558 2.4241 190.738 0.0205921 209 -1.19387e-05Z"
+                        fill="#FF0099" />
+                    <path class="wheel-slice"
+                        d="M294.505 60.8944C281.56 53.4213 267.695 47.6714 253.26 43.7908L263.095 7.10336C280.737 11.847 297.682 18.8777 313.5 28.0166C329.33 37.135 343.885 48.3056 356.788 61.2383L329.955 88.071C319.385 77.5264 307.48 68.4101 294.544 60.9539C294.544 60.9539 294.511 60.9076 294.505 60.8944Z"
+                        fill="#9C39CA" />
+                    <path class="wheel-slice"
+                        d="M389.957 104.5C380.825 88.686 369.668 74.1315 356.768 61.2053L329.936 88.038C340.526 98.6028 349.677 110.518 357.152 123.475C364.611 136.43 370.35 150.301 374.222 164.74L410.89 154.905C406.138 137.263 399.101 120.318 389.957 104.5Z"
+                        fill="#E2B0E2" />
+                    <path class="wheel-slice"
+                        d="M374.196 164.733C378.064 179.171 380.03 194.053 380.043 209C380.059 223.951 378.097 238.837 374.209 253.274L410.837 263.089C415.57 245.448 417.978 227.265 418 209C418.013 190.733 415.616 172.544 410.87 154.905L374.196 164.733Z"
+                        fill="#005DB2" />
+                    <path class="wheel-slice"
+                        d="M374.209 253.274C370.332 267.697 364.582 281.549 357.106 294.478C349.643 307.426 340.511 319.336 329.942 329.902L356.788 356.748C369.71 343.857 380.872 329.315 389.983 313.5C399.126 297.692 406.146 280.749 410.864 263.108L374.209 253.274Z"
+                        fill="#89D5FF" />
+                    <path class="wheel-slice"
+                        d="M253.254 374.143C238.82 378.012 223.943 379.975 209 379.983C194.057 379.995 179.177 378.036 164.746 374.156L154.905 410.883C172.545 415.625 190.734 418.018 209 418C227.262 417.98 245.443 415.574 263.082 410.844L253.254 374.143Z"
+                        fill="#B3ED97" />
+                    <path class="wheel-slice"
+                        d="M61.2185 356.788L88.1173 329.889C98.6893 340.444 110.596 349.572 123.535 357.039C136.46 364.509 150.305 370.259 164.72 374.143L154.878 410.877C137.245 406.138 120.309 399.112 104.5 389.977C88.6752 380.867 74.1222 369.708 61.2185 356.788Z"
+                        fill="#F2E9D6" />
+                    <path class="wheel-slice"
+                        d="M7.13635 263.095L43.9098 253.234C47.7726 267.668 53.5094 281.534 60.9737 294.478C68.4283 307.422 77.5595 319.324 88.1305 329.876L61.2118 356.782C48.3135 343.861 37.1584 329.311 28.0297 313.5C18.9008 297.68 11.877 280.735 7.13635 263.095Z"
+                        fill="#FFF500" />
+                    <path class="wheel-slice"
+                        d="M43.8702 164.753L7.14969 154.918C2.41425 172.556 0.0105682 190.738 3.52096e-05 209C-0.0106018 227.267 2.38891 245.456 7.13646 263.095L43.9099 253.247C40.0401 238.816 38.0724 223.941 38.0566 209C38.0414 194.06 39.9962 179.182 43.8702 164.753Z"
+                        fill="#FF7A00" />
+                    <path class="wheel-slice"
+                        d="M60.9671 123.528C68.4253 110.598 77.5415 98.6979 88.0842 88.1305L61.2251 61.2185C48.2956 74.1215 37.1253 88.6743 28.0033 104.5V104.513C18.8629 120.325 11.8405 137.269 7.11658 154.911H7.15626L43.8635 164.746C47.7419 150.318 53.4896 136.46 60.9605 123.522L60.9671 123.528Z"
+                        fill="#EA1414" />
+                    <path class="wheel-slice"
+                        d="M154.918 7.14966L164.746 43.8437C150.319 47.7223 136.458 53.4653 123.515 60.9275C110.569 68.3888 98.6626 77.5241 88.1041 88.0975L61.2185 61.2119C74.1207 48.2851 88.6737 37.119 104.5 28.0034C120.326 18.8863 137.276 11.8757 154.918 7.14966Z"
+                        fill="#734131" />
+                    <path class="wheel-slice"
+                        d="M262.828 410.948L253 374.254C267.428 370.375 281.288 364.632 294.231 357.17C307.177 349.709 319.442 340.573 330 330L356.528 356.886C343.626 369.812 329.073 380.978 313.246 390.094C297.42 399.211 280.471 406.222 262.828 410.948Z"
+                        fill="#0BB23A" />
+
+                </svg>
+            </div>
+            <div class="colour_circle_text">
+                <a href="#">
+                    SHOP BY
+                    COLOR
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_line">
+        <div class="line"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_top_item">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <svg class="textlogo" aria-hidden="true" width="139" height="32" viewBox="0 0 139 32"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M69.4561 6.75068C69.4561 2.89315 72.3501 0 76.4719 0C78.3321 0 79.7847 0.489004 80.1222 0.602629L80.1552 0.613698V2.36712C79.9798 2.27945 78.3136 1.57808 76.5596 1.57808C73.5779 1.57808 71.3855 3.68219 71.3855 6.48767C71.3855 9.38082 73.4902 11.3973 76.5596 11.3973C78.5766 11.3973 79.9798 10.8712 80.0675 10.7836V12.6247C79.9798 12.7123 78.5766 13.1507 76.3842 13.1507C71.5609 13.1507 69.4561 9.46849 69.4561 6.75068ZM11.6637 0.175415H9.90978V7.71514C9.90978 10.6083 8.24353 11.485 6.2265 11.485C3.77098 11.485 2.54322 10.1699 2.54322 7.71514V0.175415H0.613881V8.06582C0.613881 11.5727 3.0694 13.1508 6.1388 13.1508C9.64669 13.1508 11.6637 11.222 11.6637 8.06582V0.175415ZM25.1691 0.175415H23.4151V10.0823L15.6978 0.175415H14.2069V13.0631H15.8732V3.15623L23.5905 13.0631H25.1691V0.175415ZM28.1508 0.175415H29.9924V13.0631H28.1508V0.175415ZM41.0423 0.175415H31.7464V1.7535H35.5174V13.0631H37.359V1.7535H41.0423V0.175415ZM42.7085 0.175415H50.0751V1.7535H44.5502V5.61103H49.812V7.18911H44.5502V11.3973H50.1628V13.0631H42.7085V0.175415ZM56.8277 0.175415H52.5306V13.0631H56.8277C61.3003 13.0631 63.6681 9.90692 63.6681 6.66308C63.6681 3.59459 61.5634 0.175415 56.8277 0.175415ZM54.3722 11.3973V1.7535H56.5647C60.0725 1.7535 61.7388 4.03295 61.7388 6.57541C61.7388 9.29322 59.8971 11.3973 56.5647 11.3973H54.3722ZM97.1685 0.175415H99.0101V11.3973H104.36V13.0631H97.1685V0.175415ZM123.916 0.175415H119.97V13.0631H121.811V7.45212H124.091L127.599 13.0631H129.792C128.915 11.8357 125.933 7.01377 125.933 7.01377C126.196 6.9261 128.126 6.22473 128.126 3.76993C128.126 1.49048 126.547 0.175415 123.916 0.175415ZM121.811 5.87404V1.7535H123.653C125.407 1.7535 126.196 2.63021 126.196 3.8576C126.196 4.90966 125.582 5.96171 123.653 5.96171H121.811V5.87404ZM87.9602 0C84.1892 0 81.1198 2.98082 81.1198 6.57534C81.1198 10.2575 84.1015 13.1507 87.9602 13.1507C91.7312 13.1507 94.8006 10.1699 94.8006 6.57534C94.8006 2.98082 91.7312 0 87.9602 0ZM87.9602 11.4849C85.2416 11.4849 83.0492 9.29315 83.0492 6.57534C83.0492 3.85753 85.2416 1.66575 87.9602 1.66575C90.6788 1.66575 92.8713 3.85753 92.8713 6.57534C92.8713 9.29315 90.7665 11.4849 87.9602 11.4849ZM104.272 6.57534C104.272 2.98082 107.341 0 111.112 0C114.883 0 117.865 2.98082 117.953 6.57534C117.953 10.1699 114.883 13.1507 111.112 13.1507C107.254 13.1507 104.272 10.2575 104.272 6.57534ZM106.201 6.57534C106.201 9.29315 108.394 11.4849 111.112 11.4849C113.831 11.4849 116.023 9.29315 116.023 6.57534C116.023 3.85753 113.831 1.66575 111.112 1.66575C108.394 1.66575 106.201 3.85753 106.201 6.57534ZM134.966 0C132.423 0 130.844 1.49041 130.844 3.41918C130.844 5.1726 131.809 6.13698 133.212 6.75068C133.332 6.81058 133.534 6.90117 133.765 7.00498L133.765 7.00504C134.21 7.20511 134.765 7.45425 135.054 7.62739L135.129 7.66494C135.845 8.02139 137.071 8.63141 137.071 9.7315C137.071 10.6082 136.194 11.4849 134.44 11.4849C132.686 11.4849 131.809 10.7836 131.633 10.6082L130.756 12.1863C130.776 12.1959 130.806 12.215 130.847 12.2415L130.847 12.2416C131.181 12.4561 132.264 13.1507 134.527 13.1507C136.808 13.1507 139 12.0986 139 9.55616C139 7.36438 136.983 6.4 135.843 5.87397C135.537 5.75176 135.146 5.54437 134.819 5.37054L134.819 5.3704C134.676 5.29488 134.546 5.2257 134.44 5.1726C133.563 4.73424 132.861 4.20822 132.861 3.24383C132.861 2.36712 133.65 1.57808 135.141 1.57808C136.632 1.57808 137.509 2.10411 137.685 2.27945L138.211 0.701369C138.17 0.701369 138.078 0.66373 137.936 0.605891C137.465 0.414053 136.448 0 134.966 0ZM15.7855 18.937H22.6259V20.6027H17.6271V24.2849H22.6259V25.863H17.6271V31.8247H15.7855V18.937ZM6.84038 18.8493C3.0694 18.8493 0 21.8301 0 25.4247C0 29.1069 2.9817 32 6.84038 32C10.6114 32 13.6808 29.0192 13.6808 25.4247C13.6808 21.7425 10.6991 18.8493 6.84038 18.8493ZM6.84038 30.3343C4.12177 30.3343 1.92934 28.1425 1.92934 25.4247C1.92934 22.7069 4.12177 20.5151 6.84038 20.5151C9.55899 20.5151 11.7514 22.7069 11.7514 25.4247C11.7514 28.1425 9.64669 30.3343 6.84038 30.3343ZM58.2309 18.937H59.9848V31.8247H58.4063L50.6889 21.9178V31.8247H48.935V18.937H50.5135L58.2309 28.9315V18.937ZM116.462 18.937H114.708V28.9315L106.903 18.937H105.412V31.8247H107.166V21.9178L114.796 31.8247H116.462V18.937ZM70.7716 18.937H80.0675V20.6027H76.3842V31.8247H74.5426V20.6027H70.7716V18.937ZM90.4157 18.937H81.1198V20.6027H84.8908V31.8247H86.7325V20.6027H90.4157V18.937ZM39.376 18.937H46.6549V20.6027H41.2176V24.4603H46.4795V26.0384H41.2176V30.2466H46.8303V31.8247H39.376V18.937ZM69.6316 18.937H62.3527V31.8247H69.8069V30.2466H64.1943V26.0384H69.4562V24.4603H64.1943V20.6027H69.6316V18.937ZM90.1526 25.4247C90.1526 21.8301 93.222 18.8493 96.993 18.8493C100.764 18.8493 103.746 21.7425 103.833 25.4247C103.833 29.0192 100.764 32 96.993 32C93.1343 32 90.1526 29.1069 90.1526 25.4247ZM92.082 25.4247C92.082 28.1425 94.2744 30.3343 96.993 30.3343C99.7116 30.3343 101.904 28.1425 101.904 25.4247C101.904 22.7069 99.7116 20.5151 96.993 20.5151C94.2744 20.5151 92.082 22.7069 92.082 25.4247ZM32.711 18.937H28.5016V31.8247H32.8864C36.1312 31.8247 37.2713 29.9836 37.2713 28.4055C37.2713 25.6877 35.0789 25.1616 34.9035 25.1616C34.9153 25.1557 34.9336 25.1478 34.9574 25.1375L34.9574 25.1374C35.2853 24.9952 36.6574 24.3996 36.6574 22.3562C36.6574 20.5151 35.4297 18.937 32.711 18.937ZM30.3432 24.5479V20.6027H32.448C33.9388 20.6027 34.8158 21.3041 34.8158 22.5315C34.8158 23.8466 33.8511 24.5479 32.448 24.5479H30.3432ZM30.3432 30.2466V26.126H32.7987C34.6404 26.126 35.4297 27.0027 35.4297 28.2301C35.4297 29.1945 34.9035 30.2466 32.7987 30.2466H30.3432ZM117.953 30.5977C117.953 29.8961 118.567 29.2822 119.268 29.2822C119.97 29.2822 120.584 29.8961 120.584 30.5977C120.584 31.2992 119.97 31.9131 119.268 31.9131C118.567 31.9131 117.953 31.2992 117.953 30.5977Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_top_item">
+                    <div class="footer_title">EXPLORE
+                        <img class="footer_title_arrow" src="img/arrowdown.svg" alt="">
+                    </div>
+                    <div class="footer_dropdown">
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Benetton Group</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Sustainability</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Dress Safely</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Media & Press</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top_item">
+                    <div class="footer_title">CUSTOMER SERVICE
+                        <img class="footer_title_arrow" src="img/arrowdown.svg" alt="">
+                    </div>
+                    <div class="footer_dropdown">
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">FAQs</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Tracking</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Shipping</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Payment</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Returns</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Size guide</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top_item">
+                    <div class="footer_title">Legal & Cookies <img class="footer_title_arrow"
+                            src="img/arrowdown.svg" alt="">
+                    </div>
+                    <div class="footer_dropdown">
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Privacy</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Cookies</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Terms and conditions of use</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Terms and conditions of sale</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Legal information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top_item">
+                    <div class="footer_title">Stay in Touch
+                        <img class="footer_title_arrow" src="img/arrowdown.svg" alt="">
+                    </div>
+                    <div class="footer_dropdown">
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Find a shop</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Open a shop</a>
+                        </div>
+                        <div class="footer_title_item">
+                            <a class="footer_title_item" href="#">Work with us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top_item">
+                    <div class="countrylanguage_mobile">
+                        <div class="country">Country & Language</div>
+                        <div class="language">
+                            <span class="language_item">BG</span> |
+                            <span class="language_item">EN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_signup">
+                <div class="footer_signup_text">Sign up for our newsletter -</div>
+                <form class="signup" action method="post">
+                    <input class="signup_input" type="email" name="name" placeholder="Your E-mail ...">
+                </form>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_item">
+                    <div class="country">Country & Language</div>
+                    <div class="language">
+                        <span class="language_item">BG</span> |
+                        <span class="language_item">EN</span>
+                    </div>
+                </div>
+                <div class="footer_bottom_item">
+                    <div class="copyright">Copyright © 2021 Benetton</div>
+                </div>
+                <div class="footer_bottom_item">
+                    <div class="footer_social">
+                        <a href="https://www.instagram.com/benetton" target="_blank">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/Benetton" target="_blank">
+                            <img src="img/facebook.svg" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/user/benetton/" target="_blank">
+                            <img src="img/youtube.svg" alt="">
+                        </a>
+                        <a href="https://t.me/joinchat/AAAAAEoRmubWd9nC4Yegng" target="_blank">
+                            <img src="img/telegram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer_line  footer_line--bottom">
+        <div class="line"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
